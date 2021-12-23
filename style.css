@@ -47,6 +47,36 @@ body {
   -webkit-animation: awan-animasi 10s linear infinite;
 }
 
+ @keyframes awan-animasi {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  };
+}
+
+@-webkit-keyframes awan-animasi {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  };
+}
+
+@-ms-keyframes awan-animasi {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  };
+}
+
 @-moz-keyframes awan-animasi {
   from {
     background-position: 0 0;
@@ -54,9 +84,8 @@ body {
 
   to {
     background-position: 100% 0;
-  }
+  };
 }
-
 button {
   font-family: inherit;
   cursor: pointer;
