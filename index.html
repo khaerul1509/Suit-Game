@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>suit game apps</title>
+    <meta name="khaerul">
+    <meta name="kalok mau ambil sourcenya izin dulu ya ke saya">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sigmar+One &display=swap">
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      var soundEfek1 = new Audio();
+      soundEfek1.src ="s1.wav";
+      var soundEfek2 = new Audio();
+      soundEfek2.src ="s2.wav";
+      var soundEfek3 = new Audio();
+      soundEfek3.src ="s3.wav";
+    </script>
+  </head>
+      <div class="bg">
+        <div class="block">
+          <span>Layar terlalu kecil untuk membuka halaman ini</span>
+        </div>
+
+        <div class="splash">
+          <div class="center">
+            <h1>JAN-KEN</h1>
+            <button class="start" onmousedown="soundEfek1.play()">Mulai Game</button>
+          </div>
+        </div>
+
+        <div id="ninja-ken" class="goyang"></div>
+
+        <div class="skor">
+          <span class="skor-ken" title="Skor Ninja Ken">0</span>
+          <span class="skor-player" title="Skor Anda">0</span>
+        </div>
+
+        <div class="pilih">
+          <button id="batu"  onmousedown="soundEfek2.play()" title="PIlih Batu"></button>
+          <button id="gunting" onmousedown="soundEfek2.play()" title="Pilih Gunting"></button>
+          <button id="kertas" onmousedown="soundEfek2.play()" title="Pilih Kertas"></button>
+        </div>
+        <button onmousedown="soundEfek3.play()" id="reset" title="Mulai Ulang permainan">Reset Game</button>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
