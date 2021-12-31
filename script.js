@@ -48,6 +48,7 @@ kertas.addEventListener("click", () => {
 reset.addEventListener("click", () => {
   if (confirm("Ini Akan Memulai Ulang Permaian, Anda Yakin?")) {
     ken.style.backgroundImage = "url(ken.png)";
+    ken.classList.add("goyang");
     skorKen = 0;
     skorPlayer = 0;
     displaySkorKen.innerHTML = skorKen;
@@ -125,10 +126,9 @@ function result(who) {
     default:
       console.log("Seri");
       break;
-
-      timeOut = setTimeaout(() => {
+  }
+   timeOut = setTimeaout(() => {
         ken.style.removeProperty("background-image");
         ken.classList.add("goyang");
       }, 3000);
-  }
 }
